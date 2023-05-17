@@ -6,21 +6,15 @@ export default function Footer() {
     return (
         <div>
             <footer>
-                <ul className="list-group-horizontal">
+                <ul class="list-group list-group-horizontal">
                     <a href="https://github.com/tlequernaque">
-                        <li>
-                            <FaGithub/>
-                        </li> 
+                        <FaGithub className="m-3" size={42}/>
                     </a>
                     <a href="https://www.linkedin.com/">
-                        <li>
-                            <FaLinkedin/>
-                        </li>
+                        <FaLinkedin className="m-3" size={42}/>
                     </a>
                     <a href="https://stackoverflow.com/">
-                        <li>
-                            <FaStackOverflow/>
-                        </li>
+                        <FaStackOverflow className="m-3" size={42}/>
                     </a>
                 </ul>  
             </footer>
