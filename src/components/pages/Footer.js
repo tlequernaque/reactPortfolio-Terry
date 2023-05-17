@@ -8,15 +8,14 @@ export default function Footer() {
             <footer>
                 <ul className="list-group-horizontal">
                     <a href="https://github.com/tlequernaque">
-                       
-                        <FaGithub/>
-                       
+                        <li>
+                            <FaGithub/>
+                        </li> 
                     </a>
-                    
                     <a href="https://www.linkedin.com/">
-                       
+                        <li>
                             <FaLinkedin/>
-                      
+                        </li>
                     </a>
                     <a href="https://stackoverflow.com/">
                         <li>
