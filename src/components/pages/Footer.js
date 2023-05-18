@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <div>
             <footer>
-                <ul class="list-group list-group-horizontal">
+                <ul className="list-group list-group-horizontal">
                     <a href="https://github.com/tlequernaque">
                         <FaGithub className="m-3" size={42}/>
                     </a>

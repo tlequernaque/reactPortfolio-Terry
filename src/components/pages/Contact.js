@@ -2,17 +2,17 @@ import React, {useState} from 'react';
 import validator from 'validator';
 
 export default function Contact() {
-  const [formData, setFormData] = useState({name: "",email: "",message: ""});
+  // const [formData, setFormData] = useState({name: "",email: "",message: ""});
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
-  };
+  // const handleChange = (event) => {
+  //   const { name, value } = event.target;
+  //   setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+  // };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(`Name: ${formData.name}, Email: ${formData.email}, Message: ${formData.message}`
-    );
+    // alert(`Name: ${formData.name}, Email: ${formData.email}, Message: ${formData.message}`
+    // );
   
   }
 
@@ -31,10 +31,10 @@ export default function Contact() {
       <h1>Contact Page</h1>
       <form onSubmit = {handleSubmit}>
       <label htmlFor="name">Name:</label>
-      <input type="text" id="name" name="name" value={formData.name} onChange={handleChange}/>
+      <input type="text" id="name" name="name" />
 
       <label htmlFor="email">Email:</label>
-      <input type="email" id="email" name="email" onChange={(e) => validateEmail(e)} value={formData.email} onChange={handleChange}/>
+      <input type="email" id="email" name="email" onChange={(e) => {validateEmail(e); }}  />
       <br></br>
       <span style={{
           fontWeight: 'bold',
@@ -42,7 +42,7 @@ export default function Contact() {
         }}>{emailError}</span>
 
       <label htmlFor="message">Message:</label>
-      <textarea id="message" name="message" value={formData.message} onChange={handleChange} />
+      <textarea id="message" name="message" />
 
       <button type="submit">Submit</button>
     </form>
