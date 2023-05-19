@@ -36,37 +36,14 @@ export default function Contact() {
     setMessage('');
     setEmail('');
   };
-  // const [formData, setFormData] = useState({name: "",email: "",message: ""});
-
-  // const handleChange = (event) => {
-  //   const { name, value } = event.target;
-  //   setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
-  // };
-
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   // alert(`Name: ${formData.name}, Email: ${formData.email}, Message: ${formData.message}`
-  //   // );
   
-  // }
-
-  // const [emailError, setEmailError] = useState('')
-  // const validateEmail = (e) => {
-  //   var email = e.target.value
-  
-  //   if (validator.isEmail(email)) {
-  //     setEmailError('Valid Email :)')
-  //   } else {
-  //     setEmailError('Enter valid Email!')
-  //   }
-  // };
   return (
     <div className='container'>
       <br></br>
       <h1>Contact Page</h1>
       <form>
         <div className='mb-3'>
-        <label for="InputName" class="form-label"> Name</label>
+        <label htmlFor="InputName" className="form-label"> Name</label>
         <input
           value={userName}
           name="Name"
@@ -77,7 +54,7 @@ export default function Contact() {
         />
         </div>
         <div className='mb-3'>
-        <label for="InputEmail" className="form-label">Email address</label>
+        <label htmlFor="InputEmail" className="form-label">Email address</label>
         <input
           value={email}
           name="email"
@@ -88,7 +65,7 @@ export default function Contact() {
         />
         </div>
         <div className='mb-3'>
-        <label for="InputMessage" className="form-label">Example textarea</label>
+        <label htmlFor="InputMessage" className="form-label">Example textarea</label>
         <textarea
           value={message}
           name="message"
@@ -107,29 +84,5 @@ export default function Contact() {
         </div>
       )}
     </div>
-
-
-
-
-    // <div>
-    //   <h1>Contact Page</h1>
-    //   <form onSubmit = {handleSubmit}>
-    //   <label htmlFor="name">Name:</label>
-    //   <input type="text" id="name" name="name" />
-
-    //   <label htmlFor="email">Email:</label>
-    //   <input type="email" id="email" name="email" onChange={(e) => {validateEmail(e); }}  />
-    //   <br></br>
-    //   <span style={{
-    //       fontWeight: 'bold',
-    //       color: 'red',
-    //     }}>{emailError}</span>
-
-    //   <label htmlFor="message">Message:</label>
-    //   <textarea id="message" name="message" />
-
-    //   <button type="submit">Submit</button>
-    // </form>
-    // </div>
   );
 };
