@@ -11,7 +11,7 @@ export default function Portfolio() {
   return (
     <div>
       <h1>Portfolio Page</h1>
-      <div className="d-flex flex-row m-3">
+      <div className="d-flex justify-content-evenly m-3">
         <div className="card" style={{width: '18rem'}}>
           <img src={process.env.PUBLIC_URL+Astrnomy}  alt="astranomy project" className="card-img-top" height={600}></img>
           <div className="card-body">
@@ -83,10 +83,6 @@ export default function Portfolio() {
             <a href='https://ultimate-texteditor-pwa.herokuapp.com/' className="btn btn-primary">URL</a>
           </div>
         </div>
-
-
-
-
       </div>
       
 
