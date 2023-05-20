@@ -9,7 +9,7 @@ export default function Portfolio() {
       <h1>Portfolio Page</h1>
       <div className="d-flex flex-row m-3">
         <div className="card" style={{width: '18rem'}}>
-          <img src={process.env.PUBLIC_URL+Astrnomy}  alt="astranomy project" className="card-img-top"></img>
+          <img src={process.env.PUBLIC_URL+Astrnomy}  alt="astranomy project" className="card-img-top" height={600}></img>
           <div className="card-body">
             <h5 className="card-title">Astrnomy</h5>
             <p className="card-text"></p>
@@ -21,9 +21,9 @@ export default function Portfolio() {
         </div>
 
         <div className="card" style={{width: '18rem'}}>
-          <img src={process.env.PUBLIC_URL+cloudCalorie}  alt="clouCalorie project" className="card-img-top"></img>
+          <img src={process.env.PUBLIC_URL+cloudCalorie}  alt="clouCalorie project" className="card-img-top" height={600}></img>
           <div className="card-body">
-            <h5 className="card-title">cloudCalorie </h5>
+            <h5 className="card-title">CloudCalorie </h5>
             <p className="card-text"></p>
             <a href='https://github.com/AaronDreyer/CloudCalorie.git'>
               <FaGithub className="m-3" size={42}/>
