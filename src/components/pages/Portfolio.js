@@ -1,11 +1,11 @@
 import React from 'react';
 import { FaGithub } from "react-icons/fa";
-let Astrnomy = "./assets/images/astrnmy2.png";
-let cloudCalorie = "./assets/images/cloudcalorie2.png";
-let myWeatherApi = "./assets/images/My-Weather-API.png";
-let ultimateNoteTaker = "./assets/images/ultimate-noteTaker.png";
-let workdayScheduler = "./assets/images/Third-party-api-work-day-scheduler_.png";
-let textEditor = "./assets/images/ultimate-texteditor-pwa.herokuapp.com_.png"
+let Astrnomy = "/assets/images/astrnmy2.png";
+let cloudCalorie = "/assets/images/cloudcalorie2.png";
+let myWeatherApi = "/assets/images/My-Weather-API.png";
+let ultimateNoteTaker = "/assets/images/ultimate-noteTaker.png";
+let workdayScheduler = "/assets/images/Third-party-api-work-day-scheduler_.png";
+let textEditor = "/assets/images/ultimate-texteditor-pwa.herokuapp.com_.png"
 
 export default function Portfolio() {
   return (
