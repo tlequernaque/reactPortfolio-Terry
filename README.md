@@ -20,7 +20,7 @@ This is my portfolio for developers/designers was buikt with React. This was bui
 - [Contact / Questions](#contact--questions)
 
 ## Link
-Deployed link: [Terrys portfolio](https://ultimate-texteditor-pwa.herokuapp.com/)
+Deployed link: [Terrys portfolio](https://tlequernaque.github.io/reactportfolio-terry/)
 
 ## Screenshot
 ![image](./public/assets/images/portfolioscreenshot.png)
