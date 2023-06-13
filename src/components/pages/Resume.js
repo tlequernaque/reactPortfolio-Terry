@@ -1,6 +1,6 @@
 import React from 'react';
 import {FaFileDownload} from 'react-icons/fa'
-let resume = "./assets/images/resume.pdf"
+let resume = "/assets/images/resume.pdf"
 
 export default function Resume() {
   return (

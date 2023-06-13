@@ -3,9 +3,10 @@ import { FaGithub } from "react-icons/fa";
 let Astrnomy = "/assets/images/astrnmy2.png";
 let cloudCalorie = "/assets/images/cloudcalorie2.png";
 let myWeatherApi = "/assets/images/My-Weather-API.png";
-let ultimateNoteTaker = "/assets/images/ultimate-noteTaker.png";
+// let ultimateNoteTaker = "/assets/images/ultimate-noteTaker.png";
 let workdayScheduler = "/assets/images/Third-party-api-work-day-scheduler_.png";
-let textEditor = "/assets/images/ultimate-texteditor-pwa.herokuapp.com_.png"
+let textEditor = "/assets/images/ultimate-texteditor-pwa.herokuapp.com_.png";
+let codecollab = "/assets/images/codecollab.png";
 
 export default function Portfolio() {
   return (
@@ -57,15 +58,15 @@ export default function Portfolio() {
         </div>
 
         <div className="card m-4" style={{width: '18rem'}}>
-          <img src={process.env.PUBLIC_URL+ultimateNoteTaker}  alt="noteTaker app" className="card-img-top" height={200}></img>
+          <img src={process.env.PUBLIC_URL+codecollab}  alt="noteTaker app" className="card-img-top" height={200}></img>
           <div className="card-body">
-            <h5 className="card-title">Note Taker App </h5>
+            <h5 className="card-title">CodeCollab </h5>
             <p className="card-text"></p>
             <div className="d-flex justify-content-center">
-              <a href='https://github.com/tlequernaque/ultimate-noteTaker.git'>
+              <a href='https://github.com/blairrrrwho/codecollab'>
               <FaGithub className="me-3" size={42}/>
               </a>
-              <a href='https://incredible-note-taker-express.herokuapp.com/' className="btn btn-primary">URL</a>
+              <a href='https://codecollab-for-developers.herokuapp.com/' className="btn btn-primary">URL</a>
             </div>
             
           </div>
@@ -101,34 +102,6 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
-      
-
-
-
-      {/* <div className="d-flex flex-row m-3">
-        <section className="m-3">
-          <div className="border border-dark">
-            <div >
-              <a href='https://blairrrrwho.github.io/astrnmy/#rm'>
-                <div>
-                  <img src={process.env.PUBLIC_URL+Astrnomy} alt="astranomy project" height={800}></img>
-                </div>
-              </a>
-            </div>
-          </div>
-        </section>
-        <section className="m-3">
-          <div className="border border-dark">
-            <div>
-              <a href="https://cloudcalorie.herokuapp.com/login">
-                <div>
-                  <img src={process.env.PUBLIC_URL+cloudCalorie} alt="clouCalorie project" height={800}></img>
-                </div>
-              </a>
-            </div>
-          </div>
-        </section>
-      </div> */}
     </div>
   );
 }
